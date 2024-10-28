@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>다람쥐</title>
+</head>
+
+<body>
+
+    <h1>햄스터에게 먹이주기</h1>
+
+    <input type="button" value="먹이를 준다" onclick="
+        const myImage = new Image(300, 300);
+        document.body.appendChild(myImage);
+        ">
+
+
+<input id="night_day" type="button" value="night" onclick="
+if (document.querySelector('#night_day').value ==='night'){
+
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('#night_day').value = 'day';
+} else {
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('#night_day').value = 'night';
+}
+">
+
+
+    
+
+    <input type="image" src="img/math_ham_happy.jpeg" width="300px" height="300px">
+    <br>
+    햄스터에게 마우스를 가져다 대면 스다듬을수 있다.
+    <br>
+    <input type="text" onchange="alert('찍!')">
+    <input type="button" value="전송" onclick="alert('찍찍!')">
+
+</body>
+
+</html>
